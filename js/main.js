@@ -8,21 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
   userField = document.querySelector('#user'),
   passField = document.querySelector('#pass');
   
-  submitBtn.addEventListener('click', (e) => {
+  submitBtn.addEventListener('click', (event) => {
     userField.setAttribute('class', 'error');
     passField.setAttribute('class', 'error');
-    e.stopPropagation();
+    event.stopPropagation();
   });
-  userField.addEventListener('click', (e) => {
+  userField.addEventListener('click', (event) => {
     userField.removeAttribute('class');
-    e.stopPropagation();
+    event.stopPropagation();
   });
-  passField.addEventListener('click', (e) => {
+  passField.addEventListener('click', (event) => {
     passField.removeAttribute('class');
-    e.stopPropagation();
+    event.stopPropagation();
   });
   
-  signInBtn.addEventListener('click', function() {
+  signInBtn.addEventListener('click', () => {
     modalWindow.style.display = 'block';
   });
   modalWindow.addEventListener('click', () => {
