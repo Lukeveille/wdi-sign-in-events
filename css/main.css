@@ -170,7 +170,7 @@ button.signin:hover {
     font: 1.5em Arial;
     background-color: #bc2a39;
     color: #e7c0b9;
-    border-radius: 0.5em;
+    border-radius: 100%;
     line-height: 0;
 
     position: absolute;
@@ -193,19 +193,3 @@ button.submit {
 .getstarted>input.error {
     outline: 2px solid #bc2a39;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
